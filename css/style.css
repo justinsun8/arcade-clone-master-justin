@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-family: monospace;
+}
+.level {
+  font-size: 20px;
+  padding-top: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  margin-bottom: 10px;
+}
+footer a {
+  font-weight: bold;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: gray;
+  transition: 0.3s;
+}
+.fa-github {
+  margin-left: 3px !important;
+  font-size: 20px;
+}
+.fa-heart:hover {
+  color: red;
+	animation-duration: 1s;
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/* ANIMATIONS */
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.3); }
+}
